@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="intro">
         <h1>Ryan Belcher</h1>
         <nav>
             <ul>
@@ -32,11 +32,11 @@
             </ul>
         </nav>
     </header>
-    <main>
-        <section></section>
-        <section>
-            <h1 id="about-me">About me</h1>
-            <article>
+    <section class="hero"></section>
+    <main id="content">
+        <section class="about-me">
+            <h1 id="about-me-title">About Me</h1>
+            <article id="me">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere hic ipsa, sunt consectetur in a odit vel
                     molestiae debitis et dicta perspiciatis! Magni possimus illo, vitae obcaecati vel perspiciatis omnis!</p>
                 <br>
@@ -45,17 +45,20 @@
                 </p>
             </article>
         </section>
-        <section>
-            <h1 id="work">Work</h1>
+        <section class="work">
+            <h1 id="work-title">Work</h1>
+            <section id="work-section"></section>
         </section>
-        <section>
-            <h1 id="contact-me">Contact Me</h1>
-            <ul>
-                <li>phone number</li>
-                <li>email</li>
-                <li>git hub</li>
-                <li>socials</li>
-            </ul>
+        <section class="contact">
+            <h1 id="contact-me-title">Contact Me</h1>
+            <section id="how-to-contact">
+                <ul id="contact-info">
+                    <li>phone number</li>
+                    <li>email</li>
+                    <li>git hub</li>
+                    <li>socials</li>
+                </ul>
+            </section>
         </section>
     </main>
 </body>

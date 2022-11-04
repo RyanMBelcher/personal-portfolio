@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: azure;
+    font-family: 'Poppins';
+}
+
+#intro {
+    display: flex;
+    background-color: #64dfdf;
+    height: 75px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#intro h1 {
+    background-color: #6930c3;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: #64dfdf;
+    width: 20%;
+    padding-right: 15px;
+    font-style: bold;
+}
+
+#intro nav {
+    width: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 5px;
+}
+
+#intro ul {
+    display: flex;
+}
+
+#intro li {
+    display: flex;
+    list-style-type: none;
+    padding: 5px;
+    margin-right: 10px;
+    justify-content: space-evenly;
+}
+
+a {
+    box-shadow: inset 0 0 0 0 #7400b8;
+    color: #7400b8;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-decoration: none;  
+  }
+
+a:hover {
+    box-shadow: inset 100px 0 0 0 #7400b8;
+    color: white;
+  }
+
+.hero {
+    height: 300px;
+    width: 100%;  
+    background-image: url(../images/hero-image.png); 
+    background-size: cover;
+    background-position: center;
+  }
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#about-me-title {
+    height: 100%;
+    width: 20%;
+    font-size: 200%;
+    font-weight: bold;
+    text-align: right;
+    margin: 20px;
+    padding: 20px;
+    border-right: 5px solid black;
+}
+
+#me {
+    height: 100%;
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.work {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#work-title {
+    height: 100%;
+    width: 20%;
+    text-align: right;
+    font-size: 200%;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+    border-right: 5px solid black;
+}
+
+#work-section {
+    height: 100%;
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+}
+
+.contact {
+    display: flex;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#contact-me-title {
+    height: 100%;
+    width: 20%;
+    text-align: right;
+    font-size: 200%;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+    border-right: 5px solid black;
+}
+
+#how-to-contact {
+    display: flex;
+    height: 100%;
+    width: 80%;
+    margin: 20px;
+    padding: 20px;
+}
+
+#how-to-contact ul {
+    display: flex;
+    width: 100%;
+}
+
+#how-to-contact li {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+}
+
