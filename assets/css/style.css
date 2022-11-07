@@ -25,10 +25,11 @@ body {
     justify-content: right;
     color: rgb(170, 81, 248);
     width: 20%;
+    min-width: 200px;
     padding-right: 15px;
     font-style: bold;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 200%; 
+    font-size: 225%; 
 }
 
 #intro nav {
@@ -55,6 +56,7 @@ a {
     margin: 0 -.25rem;
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    font-size: 20px;
     /* text-decoration: none;   */
   }
 
@@ -78,6 +80,7 @@ a:hover {
 
 .title {
     width: 10%;
+    min-width: 150px;
     text-align: right;
     font-size: 150%;
     font-weight: bold;
@@ -88,7 +91,7 @@ a:hover {
     border-right: 5px solid #FF71CE;
 }
 
-.about-me {
+.section-wrapper {
     display: flex;
     width: 100%;
     margin-bottom: 10px;
@@ -99,13 +102,6 @@ a:hover {
     width: 90%;
     margin: 20px;
     padding: 20px;
-}
-
-.work {
-    display: flex;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
 }
 
 #work-section {
@@ -135,13 +131,6 @@ a:hover {
     padding: 10px;
 }
 
-.big-photo:hover {
-    box-shadow: 0px 1px 2px 0px #01CDFE,
-            1px 2px 4px 0px #01CDFE,
-            2px 4px 8px 0px #01CDFE,
-            2px 4px 16px 0px #01CDFE;
-}
-
 .work-images {
     display: grid;
     grid-template-columns: auto auto;
@@ -156,41 +145,21 @@ a:hover {
     border: 5px solid #FF71CE;
 }
 
-#photo-one:hover {
+.big-photo:hover {
     box-shadow: 0px 1px 2px 0px #01CDFE,
             1px 2px 4px 0px #01CDFE,
             2px 4px 8px 0px #01CDFE,
             2px 4px 16px 0px #01CDFE;
+    opacity: 0.4;
 }
 
-#photo-two:hover {
-    box-shadow: 0px 1px 2px 0px #01CDFE,
-            1px 2px 4px 0px #01CDFE,
-            2px 4px 8px 0px #01CDFE,
-            2px 4px 16px 0px #01CDFE;
-}
-
-#photo-three:hover {
-    box-shadow: 0px 1px 2px 0px #01CDFE,
-    1px 2px 4px 0px #01CDFE,
-    2px 4px 8px 0px #01CDFE,
-    2px 4px 16px 0px #01CDFE;
-}
-
-#photo-four:hover {
-    box-shadow: 0px 1px 2px 0px #01CDFE,
-            1px 2px 4px 0px #01CDFE,
-            2px 4px 8px 0px #01CDFE,
-            2px 4px 16px 0px #01CDFE;
-}
-
-
-.contact {
-    display: flex;
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 5px;
-}
+.work-photo:hover {
+        box-shadow: 0px 1px 2px 0px #01CDFE,
+                1px 2px 4px 0px #01CDFE,
+                2px 4px 8px 0px #01CDFE,
+                2px 4px 16px 0px #01CDFE;
+        opacity: 0.4;
+    }
 
 #how-to-contact {
     display: flex;
@@ -211,3 +180,79 @@ a:hover {
     width: 100%;
 }
 
+@media (max-width: 960px) {
+    #intro {
+        height: 200px;
+        display: block;
+    }
+    #intro h1 {
+        top: 0;
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+    #intro nav {
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin-top: 10px;
+    }
+    #intro ul {
+        display: block;
+        text-align: center;
+  }
+    #intro li {
+        margin-right: 0;
+        padding: 0;
+        margin-top: 10px;
+    }
+    .hero {
+        margin-bottom: 5px;
+    }
+    .section-wrapper {
+        display: block;
+        padding: 0;
+    }
+    .title {
+        border-bottom: 5px solid #FF71CE;
+        border-right: none;
+        width: 100%;
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+    .work-images {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 10px; 
+        grid-row-gap: 10px;
+        margin-top: 10px;
+    }
+    .big-photo{
+        height: auto;
+    }
+    #me {
+        margin: 10px 0 10px 0;
+        padding: 0;
+        width: 100%;
+    }
+    #work-section {
+        margin: 15px 0 10px 0;
+        padding: 0;
+        width: 100%;
+    }
+    #how-to-contact {
+        display: block;
+         margin: 10px 0 10px 0;
+        padding: 0;
+        width: 100%;
+    }
+    #how-to-contact ul {
+        display: block;
+    }
+    #how-to-contact li {
+        display: block;
+    }
+    
+
+}
