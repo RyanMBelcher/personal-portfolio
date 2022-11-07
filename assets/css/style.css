@@ -6,7 +6,7 @@
 
 body {
     background-color: rgb(185, 103, 255, 0.3);
-    /* font-size: 16px; */
+    font-size: 20px;
     /* font-family: 'Poppins'; */
 }
 
@@ -178,6 +178,10 @@ body {
     justify-content: space-around;
     align-items: flex-end;
     width: 100%;
+}
+
+#how-to-contact a {
+    color: #FF71CE;
 }
 
 @media (max-width: 960px) {
