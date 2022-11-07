@@ -50,7 +50,7 @@ body {
     margin-right: 10px;
 }
 
-a {
+#intro a {
     box-shadow: inset 0 0 0 0 #FF71CE;
     color: #FF71CE;
     margin: 0 -.25rem;
@@ -60,7 +60,7 @@ a {
     /* text-decoration: none;   */
   }
 
-a:hover {
+#intro a:hover {
     box-shadow: inset 100px 0 0 0 #FF71CE;
     color: white;
   }
@@ -150,7 +150,7 @@ a:hover {
             1px 2px 4px 0px #01CDFE,
             2px 4px 8px 0px #01CDFE,
             2px 4px 16px 0px #01CDFE;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .work-photo:hover {
@@ -158,7 +158,7 @@ a:hover {
                 1px 2px 4px 0px #01CDFE,
                 2px 4px 8px 0px #01CDFE,
                 2px 4px 16px 0px #01CDFE;
-        opacity: 0.4;
+        opacity: 0.6;
     }
 
 #how-to-contact {
