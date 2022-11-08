@@ -7,7 +7,7 @@
 body {
     background-color: rgb(185, 103, 255, 0.3);
     font-size: 20px;
-    /* font-family: 'Poppins'; */
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #intro {
@@ -24,17 +24,15 @@ body {
     align-items: center;
     justify-content: right;
     color: rgb(170, 81, 248);
-    width: 20%;
-    min-width: 200px;
     padding-right: 15px;
+    padding-left: 15px;
     font-style: bold;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 225%; 
+    font-size: 200%; 
 }
 
 #intro nav {
-    width: 80%;
     display: flex;
+    flex-grow: 1;
     align-items: flex-end;
     justify-content: flex-end;
     padding-right: 5px;
@@ -57,7 +55,6 @@ body {
     padding: 0 .25rem;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     font-size: 20px;
-    /* text-decoration: none;   */
   }
 
 #intro a:hover {
@@ -69,10 +66,24 @@ body {
     height: 300px;
     width: 100%;  
     background-image: url(../images/hero-image.png); 
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     position: relative;
   }
+  
+  .hero-quote {
+    position: absolute;
+    background-color: #FF71CE;
+    color: rgb(170, 81, 248);
+    font-weight: 900;
+    font-size: 125%;
+    bottom: 25px;
+    right: 50px;
+    padding: 15px;
+  }
+
+
 
 #content {
     margin: 0 10%;
@@ -84,7 +95,6 @@ body {
     text-align: right;
     font-size: 150%;
     font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
     color: rgb(170, 81, 248);
     margin: 10px;
     padding: 10px;
@@ -178,16 +188,52 @@ body {
     justify-content: space-around;
     align-items: flex-end;
     width: 100%;
+    padding: 5px;
 }
 
 #how-to-contact a {
+    position: relative;
     color: #FF71CE;
+    text-decoration: none;
+  }
+  
+#how-to-contact a::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      border-radius: 4px;
+      background-color: rgb(170, 81, 248);
+      bottom: 0;
+      left: 0;
+      transform-origin: right;
+      transform: scaleX(0);
+      transition: transform .2s ease-in-out;
+    }
+  
+#how-to-contact a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+@media (max-width: 1373px) {
+    .work-images {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 10px; 
+        grid-row-gap: 10px;
+        margin-top: 10px;
+    }
+    .big-photo{
+        height: auto;
+    }
 }
 
 @media (max-width: 960px) {
     #intro {
         height: 200px;
         display: block;
+        padding: 0;
     }
     #intro h1 {
         top: 0;
