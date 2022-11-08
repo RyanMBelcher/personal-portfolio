@@ -83,8 +83,6 @@ body {
     padding: 15px;
   }
 
-
-
 #content {
     margin: 0 10%;
 }
@@ -216,6 +214,8 @@ body {
     transform: scaleX(1);
   }
 
+/* between 961px-1373px the images get squished so we are just going to stack them and let everything else stay where it is */
+
 @media (max-width: 1373px) {
     .work-images {
         display: grid;
@@ -228,6 +228,8 @@ body {
         height: auto;
     }
 }
+
+/* anything below 960px we are going to stack alll sections of the page */
 
 @media (max-width: 960px) {
     #intro {
@@ -250,7 +252,7 @@ body {
     #intro ul {
         display: block;
         text-align: center;
-  }
+    }
     #intro li {
         margin-right: 0;
         padding: 0;
